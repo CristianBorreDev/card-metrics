@@ -8,7 +8,4 @@ export const metrics = [
   { title: "Conversiones", value: "3.4%", change: "+0.6%", trend: "up" },
   { title: "Rebotes", value: "38%", change: "-4%", trend: "down" },
   { title: "Visitas mensuales", value: "54,230", change: "+9%", trend: "up" },
-  { title: "Ingresos totales", value: "$12,480", change: "+6%", trend: "up" },
-  { title: "Coste por adquisición", value: "$4.32", change: "-7%", trend: "down" },
-  { title: "Tareas completadas", value: "76%", change: "+11%", trend: "up" },
 ];
