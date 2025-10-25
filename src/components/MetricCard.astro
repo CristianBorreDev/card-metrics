@@ -1,0 +1,16 @@
+---
+const { title, value, change, trend } = Astro.props;
+const trendColor = trend === "up" ? "text-emerald-400" : "text-red-400";
+const trendIcon = trend === "up" ? "▲" : "▼";
+---
+
+<div class="bg-[#141618] border border-[#1E2124] rounded-2xl p-5 flex flex-col gap-3 transition-all duration-300 hover:scale-[1.02] hover:border-[#6366F1]/40">
+  <div class="text-sm text-gray-400">{title}</div>
+  <div class="flex items-end justify-between">
+    <h2 class="text-3xl font-semibold text-gray-100">{value}</h2>
+    <div class={`flex items-center gap-1 text-sm ${trendColor}`}>
+      <span>{trendIcon}</span>
+      <span>{change}</span>
+    </div>
+  </div>
+</div>
